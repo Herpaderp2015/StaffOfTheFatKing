@@ -1,0 +1,94 @@
+Init
+LayerCount 3
+SetSprite assets/Enemies/Bear/size3.png
+Frame 0 0 17 35 39
+Frame 1 0 0 17 14
+Frame 2 17 0 12 13
+LayerPosSet 1 33 105
+LayerPosSet 2 45 63
+HitBoxSize 35 45
+SprMove -15 0
+SetAnim Stand
+
+Anim Stand
+Frame 0 0 17 35 39
+Frame 1 0 0 17 14
+Frame 2 17 0 12 13
+LayerPosSet 1 33 105
+LayerPosSet 2 45 63
+HitBoxSize 35 45
+Wait 40
+Frame 0 35 57 35 38
+LayerPosSet 1 33 102
+LayerPosSet 2 45 60
+Wait 40
+SetAnim Stand
+
+Anim Attack
+Frame 0 0 17 35 39
+Frame 1 0 0 17 14
+Frame 2 17 0 12 13
+LayerPosSet 1 33 105
+LayerPosSet 2 45 63
+HitBoxSize 35 45
+Wait 5
+Frame 2 29 0 8 11
+LayerPosSet 2 57 57
+Wait 3
+Frame 2 37 0 14 14
+LayerPosSet 2 69 75
+Wait 10
+Frame 0 35 17 35 39
+Frame 2 51 0 20 17
+LayerPosSet 2 45 63
+Wait 3
+DoAction
+Frame 2 17 0 12 13
+Frame 0 70 17 35 39
+LayerMove 1 -3 0
+Wait 3
+LayerMove 1 3 0
+Frame 0 0 56 35 39
+Wait 3
+Frame 0 0 17 35 39
+Wait 14
+SetAnim Stand
+
+Anim Hit
+SprPosSet -18 0
+LayerPosSet 1 33 105
+LayerPosSet 2 45 63
+Frame 0 35 17 35 39
+SprMove 4 0
+Wait 3
+Frame 0 70 17 35 39
+LayerMove 1 -3 0
+SprMove -8 0
+Wait 3
+LayerMove 1 3 0
+Frame 0 0 56 35 39
+SprMove 6 0
+Wait 3
+Frame 0 0 17 35 39
+SprMove -4 0
+Wait 3
+SprMove 2 0
+SetAnim Stand
+
+Anim Grow
+LayerCount 1
+SetSprite assets/Enemies/Bear/weightgain.png
+Frame 0 161 53 40 49
+SprMove -9 0
+Wait 3
+Frame 0 209 52 44 50
+SprMove -9 0
+Wait 3
+Frame 0 0 0 51 52
+SprMove -15 0
+Wait 3
+Frame 0 59 2 44 50
+SprMove 15 0
+Wait 3
+LoadAnimData assets/Enemies/Bear/size4.txt
+SetAnim Stand

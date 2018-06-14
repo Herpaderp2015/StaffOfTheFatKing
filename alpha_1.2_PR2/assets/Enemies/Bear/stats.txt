@@ -1,0 +1,7 @@
+name:Bear
+sizes:4
+metabolism:5
+atk:4
+def:25
+maxHp:10
+spd:3

@@ -1,0 +1,37 @@
+Init
+LayerCount 3
+SetSprite assets/Enemies/Bear/size4.png
+Frame 0 0 14 44 40
+Frame 1 0 0 17 14
+Frame 2 17 0 12 11
+LayerPosSet 1 51 108
+LayerPosSet 2 63 72
+HitBoxSize 44 50
+SetAnim Stand
+
+Anim Stand
+Frame 0 0 14 44 40
+LayerPosSet 1 51 108
+LayerPosSet 2 63 72
+Wait 40
+Frame 0 44 15 44 39
+LayerPosSet 1 51 105
+Wait 40
+SetAnim Stand
+
+Anim Hit
+LayerPosSet 1 51 108
+Frame 0 0 54 44 40
+SprMove 4 0
+Wait 3
+Frame 0 44 54 44 40
+SprMove -8 0
+Wait 3
+Frame 0 0 54 44 40
+SprMove 6 0
+Wait 3
+Frame 0 44 54 44 40
+SprMove -4 0
+Wait 3
+SprMove 2 0
+SetAnim Stand

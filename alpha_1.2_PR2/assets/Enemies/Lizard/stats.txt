@@ -1,0 +1,7 @@
+name:Lizard:Areas passed the second colon are comments
+sizes:3:Amount of weight sizes
+metabolism:2:Amount of food needed to move up a weight size
+atk:3
+def:2
+maxHp:5
+spd:2

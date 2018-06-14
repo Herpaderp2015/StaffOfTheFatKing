@@ -1,0 +1,44 @@
+Init
+LayerCount 3
+SetSprite assets/Enemies/Lizard/size3.png
+Frame 0 0 11 30 27
+Frame 1 0 0 16 11
+Frame 2 16 0 8 8
+LayerPosSet 1 18 75
+LayerPosSet 2 36 48
+HitBoxSize 30 36
+SetAnim Stand
+
+Anim Stand
+Frame 0 0 11 30 27
+Frame 1 0 0 16 11
+Frame 2 16 0 8 8
+LayerPosSet 1 18 75
+LayerPosSet 2 36 48
+Wait 40
+Frame 0 30 11 30 28
+LayerPosSet 1 18 78
+LayerPosSet 2 36 51
+Wait 40
+SetAnim Stand
+
+Anim Hit
+Frame 0 0 39 29 27
+LayerPosSet 1 18 75
+SprMove 4 0
+Wait 3
+Frame 0 29 39 30 27
+Frame 2 24 0 8 7
+LayerMove 2 0 3
+SprMove -8 0
+Wait 3
+Frame 0 0 39 29 27
+SprMove 6 0
+Wait 3
+Frame 0 29 39 30 27
+Frame 2 24 0 8 7
+LayerMove 2 0 3
+SprMove -4 0
+Wait 3
+SprMove 2 0
+SetAnim Stand

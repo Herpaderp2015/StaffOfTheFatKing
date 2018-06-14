@@ -1,0 +1,132 @@
+SprSize 24 39
+ColOfs 192
+Size 0
+
+Anim Wait
+Frame 0 0 20
+SetAnim Wait
+
+Anim Stand
+Frame 24 0 20
+Frame 24 195 20
+SetAnim Stand
+
+Anim Walk
+Frame 24 0 4
+Frame 24 195 4
+Frame 48 195 4
+Frame 24 195 4
+Frame 24 0 4
+Frame 72 195 4
+Frame 96 195 4
+Frame 72 195 4
+SetAnim Walk
+
+Anim Attack
+Frame 24 156 5
+Frame 48 156 5
+Frame 72 156 3
+Frame 96 156 7
+DoAction
+Frame 120 156 3
+Frame 144 156 3
+Frame 168 156 12
+SetAnim Stand
+
+Anim Absorb
+Frame 168 156 7
+DoAction
+Frame 144 156 3
+Frame 120 156 3
+Frame 96 156 12
+SetAnim Stand
+
+Anim FoodToss
+Frame 120 156 3
+Frame 144 156 3
+Frame 168 156 12
+SetAnim Stand
+
+Anim Hit
+Frame 24 0 3
+SprMove 4 0
+Wait 3
+SprMove -4 0
+Wait 3
+SprMove 2 0
+Wait 3
+SprMove -2 0
+Wait 3
+SprMove 0 0
+SetAnim Stand
+
+Anim Block
+Frame 120 195 5
+Frame 144 195 10
+SetAnim Stand
+
+Anim BlockHit
+Frame 144 195 3
+SprMove 4 0
+Wait 3
+SprMove -4 0
+Wait 3
+SprMove 2 0
+Wait 3
+SprMove -2 0
+Wait 3
+SprMove 0 0
+SetAnim Stand
+
+Anim EatStart
+SetSize 25 39
+Frame 24 239 5
+SetSize 26 39
+Frame 49 239 5
+SetSize 25 39
+Frame 75 239 5
+SetSize 24 39
+Frame 100 239 3
+DoAction
+SetAnim Eat
+
+Anim Eat
+Frame 124 239 5
+Frame 148 239 5
+SetAnim Eat
+
+Anim EatFinish
+SetSize 25 39
+Frame 24 278 3
+SetSize 26 39
+Frame 49 278 3
+SetSize 25 39
+Frame 75 278 3
+SetSize 24 39
+Frame 0 0 3
+DoAction
+SetAnim Stand
+
+Anim GainStart
+Frame 0 0 15
+SprMove 4 0
+Wait 3
+SprMove -4 0
+Wait 3
+SprMove 2 0
+Wait 3
+SprMove -2 0
+Wait 3
+SprMove 0 0
+SetAnim Gain
+
+Anim Gain
+SetColOfs 320
+SetEmotion 1
+SetSprite weightgain.png
+Frame 12 201 3
+Frame 140 201 3
+Frame 268 201 3
+SetSize 25 39
+Frame 76 137 3
+DoAction

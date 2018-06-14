@@ -1,0 +1,82 @@
+Init
+LayerCount 2
+SetSprite assets/Enemies/Lizard/size0.png
+Frame 0 0 11 24 36
+Frame 1 0 0 6 11
+LayerPosSet 1 21 42
+HitBoxSize 24 36
+SetAnim Stand
+
+Anim Stand
+SprPosSet 0 0
+Frame 0 0 11 24 36
+Frame 1 0 0 6 11
+LayerPosSet 1 21 42
+Wait 40
+SprPosSet 3 0
+Frame 0 52 11 23 36
+Frame 1 6 0 7 10
+LayerPosSet 1 24 45
+Wait 40
+SetAnim Stand
+
+Anim Attack
+SprPosSet 0 0
+Frame 0 24 11 28 33
+Frame 1 0 0 6 11
+LayerPosSet 1 21 30
+Wait 3
+Frame 0 0 11 24 36
+Frame 1 0 0 6 11
+LayerPosSet 1 21 42
+SprMove 0 9
+Wait 3
+SprMove 0 6
+Wait 3
+SprMove 0 3
+Wait 3
+SprMove 0 -3
+Wait 3
+SprMove 0 -6
+Wait 3
+SprMove 0 -9
+Frame 0 24 11 28 33
+Frame 1 6 0 7 10
+LayerPosSet 1 24 33
+Wait 3
+SprPosSet 0 0
+Frame 0 0 11 24 36
+Frame 1 13 0 10 10
+LayerPosSet 1 9 45
+Wait 3
+DoAction
+Frame 1 23 0 13 7
+LayerPosSet 1 -3 54
+Wait 20
+SetAnim Stand
+
+Anim Hit
+SprMove 4 0
+Wait 3
+SprMove -8 0
+Wait 3
+SprMove 6 0
+Wait 3
+SprMove -4 0
+Wait 3
+SprMove 2 0
+SetAnim Stand
+
+Anim Grow
+LayerCount 1
+SetSprite assets/Enemies/Lizard/weightgain.png
+Frame 0 41 124 24 36
+Wait 3
+Frame 0 75 124 24 36
+Wait 3
+Frame 0 109 124 24 36
+Wait 3
+Frame 0 7 84 24 36
+Wait 3
+LoadAnimData assets/Enemies/Lizard/size1.txt
+SetAnim Stand

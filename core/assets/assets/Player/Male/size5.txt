@@ -1,0 +1,83 @@
+SprSize 44 43
+ColOfs 440
+Size 0
+
+Anim Wait
+Frame 0 0 20
+SetAnim Wait
+
+Anim Stand
+Frame 44 0 20
+Frame 44 215 20
+SetAnim Stand
+
+Anim Walk
+Frame 44 0 8
+Frame 44 215 8
+Frame 88 215 8
+Frame 44 215 8
+Frame 44 0 8
+Frame 132 215 8
+Frame 176 215 8
+Frame 132 215 8
+SetAnim Walk
+
+Anim Attack
+Frame 44 172 5
+Frame 88 172 5
+Frame 132 172 3
+Frame 176 172 3
+Frame 220 172 7
+DoAction
+Frame 264 172 3
+Frame 308 172 3
+Frame 352 172 3
+Frame 396 172 9
+SetAnim Stand
+
+Anim Absorb
+Frame 396 172 7
+DoAction
+Frame 352 172 3
+Frame 308 172 3
+Frame 264 172 3
+Frame 220 172 12
+SetAnim Stand
+
+Anim FoodToss
+Frame 264 172 3
+Frame 308 172 3
+Frame 352 172 3
+Frame 396 172 9
+SetAnim Stand
+
+Anim Hit
+Frame 44 0 3
+SprMove -17 0
+Wait 3
+SprMove -25 0
+Wait 3
+SprMove -19 0
+Wait 3
+SprMove -23 0
+Wait 3
+SprMove -21 0
+SetAnim Stand
+
+Anim Block
+Frame 220 215 5
+Frame 264 215 10
+SetAnim Stand
+
+Anim BlockHit
+Frame 264 215 3
+SprMove -17 0
+Wait 3
+SprMove -25 0
+Wait 3
+SprMove -19 0
+Wait 3
+SprMove -23 0
+Wait 3
+SprMove -21 0
+SetAnim Stand
